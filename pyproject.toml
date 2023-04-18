@@ -1,21 +1,5 @@
-[project]
-name = "HassWS"
-version = "0.0.1"
-dependencies = ["websocket-client"]
 
 [build-system]
 requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
-[metadata]
-name = "HassWS"
-version = "0.0.1"
-author = AlexMKX
-description = Home Assistant Simple Websocket client
-long_description = file: README.md
-long_description_content_type = text/markdown
-keywords = example, setuptools
-license = BSD 3-Clause License
-classifiers =
-    License :: OSI Approved :: BSD License
-    Programming Language :: Python :: 3
