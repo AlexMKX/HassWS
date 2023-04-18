@@ -1,8 +1,10 @@
-import websocket
 from typing import TYPE_CHECKING
 if TYPE_CHECKING:
     import appdaemon.plugins.hass.hassapi as hass
+
 from typing import Optional
+import websocket
+
 import json
 import urllib.parse
 
@@ -15,8 +17,8 @@ class HassWS:
     class Error(Exception):
         pass
 
-    def __init__(self, hass_instance: Optional['hass.Hass'] = None, server_url: Optional[str] = None,
-                 token: Optional[str] = None):
+    def __init__(self, hass_instance: Optional['hass.Hass'] = None,
+                 server_url: Optional[str] = None, token: Optional[str] = None):
         if hass_instance is not None:
             ha_url = hass_instance.config['plugins']['HASS']['ha_url']
             ha_srv = urllib.parse.urlparse(ha_url).netloc
