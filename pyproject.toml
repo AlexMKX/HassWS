@@ -3,6 +3,10 @@ name = "HassWS"
 version = "0.0.1"
 dependencies = ["websocket-client"]
 
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
 [metadata]
 name = "HassWS"
 version = "0.0.1"
