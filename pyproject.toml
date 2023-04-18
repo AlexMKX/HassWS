@@ -1,5 +1,5 @@
 [build-system]
 requires = [
-    "appdaemon", "setuptools"
+    "appdaemon", "setuptools", "websocket-client"
 ]
 build-backend = "setuptools.build_meta"
