@@ -2,7 +2,7 @@
 name = "HassWS"
 version = "0.0.1"
 dependencies = [
-  "appdaemon",  "websocket-client"]
+   "websocket-client"]
 
 #[build-system]
 #requires = [

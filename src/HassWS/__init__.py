@@ -1,5 +1,7 @@
 import websocket
-import appdaemon.plugins.hass.hassapi as hass
+from typing import TYPE_CHECKING
+if TYPE_CHECKING:
+    import appdaemon.plugins.hass.hassapi as hass
 from typing import Optional
 import json
 import urllib.parse
