@@ -1,4 +1,5 @@
 [project]
+name = "HassWS"
 dependencies = [
   "appdaemon",  "websocket-client"]
 
