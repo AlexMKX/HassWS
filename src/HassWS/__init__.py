@@ -23,7 +23,8 @@ class HassWS:
         else:
             if not (server_url is not None and token is not None):
                 raise self.Error('Either hass_instance or server_url and token must be provided')
-            self._url = server_url
+            ha_srv = urllib.parse.urlparse(server_url).netloc
+            self._url = f"wss://{ha_srv}/api/websocket"
             self._token = token
 
     def __connect(self) -> websocket.WebSocket:
