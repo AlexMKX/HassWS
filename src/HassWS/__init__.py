@@ -8,14 +8,14 @@ import urllib.parse
 
 
 class HassWS:
-    _hass: hass.Hass
+    _hass: 'hass.Hass'
     _url: str
     _token: str
 
     class Error(Exception):
         pass
 
-    def __init__(self, hass_instance: Optional[hass.Hass] = None, server_url: Optional[str] = None,
+    def __init__(self, hass_instance: Optional['hass.Hass'] = None, server_url: Optional[str] = None,
                  token: Optional[str] = None):
         if hass_instance is not None:
             ha_url = hass_instance.config['plugins']['HASS']['ha_url']
