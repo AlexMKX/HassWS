@@ -3,9 +3,4 @@ name = "HassWS"
 version = "0.0.1"
 dependencies = [
    "websocket-client"]
-
-#[build-system]
-#requires = [
-#
-#]
-#build-backend = "setuptools.build_meta"
+description = "Home Assistant Simple Websocket client"
