@@ -4,3 +4,4 @@ version = "0.0.1"
 dependencies = [
    "websocket-client"]
 description = "Home Assistant Simple Websocket client"
+readme = "README.md"
